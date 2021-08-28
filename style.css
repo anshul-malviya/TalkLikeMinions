@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Palette+Mosaic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: lightgray;
+}
+
+@media (max-width:360px) {
+    .container {
+        height: 70vh;
+    }
+}
+
+.header {
+    width: 100vw;
+    height: 7em;
+    background: #F0F0F0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 13em;
+}
+
+.header h1 {
+    color: #306391;
+}
+
+.header span {
+    color: #f5e050;
+    font-size: 1.3em;
+    font-family: 'Anton', sans-serif;
+}
+
+.header img {
+    width: 12em;
+    height: 6em;
+}
+
+.header img:hover {
+    transform: skewX(-40deg);
+    cursor: pointer;
+}
+
+@media (max-width:360px) {
+    .header {
+        width: 100%;
+        height: 4em;
+        padding: 0;
+    }
+
+    .header h1 {
+        font-size: 1em;
+    }
+
+    .header img {
+        width: 9em;
+        height: 4em;
+    }
+
+    #inputBox {
+        max-width: 90%;
+    }
+
+    #outputBox {
+        max-width: 20em;
+    }
+}
+
+.content {
+    width: 100%;
+    height: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3em;
+    justify-content: space-between;
+}
+
+@media (max-width: 360px) {
+
+    .content {
+        height: 60%;
+    }
+
+}
+
+#inputBox {
+    width: 46em;
+    height: 6em;
+    padding: 1em;
+}
+
+#btn-translate {
+    padding: .7em 1.2em;
+    background: #f5e050;
+    color: #306391;
+    border: none;
+    box-shadow: 2px 2px 2px black;
+    cursor: pointer;
+
+}
+
+.content h3 {
+    padding: .3em;
+    font-variant: small-caps;
+}
+
+#outputBox {
+    width: 38em;
+    height: 4em;
+    border: 1px solid black;
+    background: white;
+    padding: 1em;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 7em;
+    background: #f5e050;
+    text-align: center;
+    padding-top: .5em;
+}
+
+@media (max-width: 360px) {
+
+    .footer {
+        height: 12em;
+    }
+
+}
+
+.footer h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+.footer p {
+    font-size: 1.2em;
+
+}
+
+@media (max-width) {
+    .footer p {
+        font-size: .2em;
+    }
+
+}
